@@ -6,15 +6,13 @@ manifest:
     - import: false
       name: pigweed
       path: third_party/pigweed
-      remote: pigweed
-      revision: main
+      remote: yperess
+      revision: pw_sensor
     - import: true
       name: zephyr
       path: third_party/zephyr
-      remote: zephyr
-      revision: main
+      remote: yperess
+      revision: pw_sensor
   remotes:
-    - name: pigweed
-      url-base: git@github.com:google
-    - name: zephyr
-      url-base: git@github.com:zephyrproject-rtos
+    - name: yperess
+      url-base: git@github.com:yperess
