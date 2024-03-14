@@ -1,0 +1,20 @@
+# Copyright (c) 2024 Google LLC
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  projects:
+    - import: false
+      name: pigweed
+      path: third_party/pigweed
+      remote: pigweed
+      revision: main
+    - import: true
+      name: zephyr
+      path: third_party/zephyr
+      remote: zephyr
+      revision: main
+  remotes:
+    - name: pigweed
+      url-base: git@github.com:google
+    - name: zephyr
+      url-base: git@github.com:zephyrproject-rtos
